@@ -1,10 +1,35 @@
-
-
-  <div class="vertical-menu">
-	<ul>
-		<li><a href="/">HOME</a></li> <!--Path to the home page-->
-		<li><a href="/new_releases">NEW RELEASES</a></li> <!--Path to the new releases page-->
-		<li><a href="/all_shoes">ALL SHOES</a></li> <!--Path to the all shoes page-->
-		<li><a href="/about">ABOUT</a></li> <!--Path to the about page-->
-	</ul>
+<div class="navbar">
+   <ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="#news">News</a></li>
+	<div class="dropdown">
+	  <button class="dropbtn">Products	
+		<i class="fa fa-caret-down"></i>
+	  </button>
+	  <div class="dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	  </ul>
+	  </div>
+	</div>
   </div>
+
+<script>//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+	var dropdown = document.getElementsByClassName("dropdown-btn");
+	var i;
+	
+	for (i = 0; i < dropdown.length; i++) {
+	  dropdown[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var dropdownContent = this.nextElementSibling;
+		if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		} else {
+		  dropdownContent.style.display = "block";
+		}
+	  });
+	}</script>
+
+
+

@@ -29,8 +29,11 @@ h1{
   color: white;
   text-align: center;
   padding: 14px 16px;
+  padding-left: 0;
   text-decoration: none;
-  left: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 47%;
 }
 
 /* The dropdown container */
@@ -38,7 +41,7 @@ h1{
   float: left;
   overflow: hidden;
   position: relative;
-  left: 50%;
+  left: 47%;
 }
 
 /* Dropdown button */
@@ -60,6 +63,7 @@ h1{
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
+  float: left;
   display: none;
   position: fixed;
   background-color: #f9f9f9;
@@ -72,10 +76,10 @@ h1{
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 12px 16px;
+  left: 0;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 /* Add a grey background color to dropdown links on hover */
@@ -87,6 +91,9 @@ h1{
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
+
 
 
 
